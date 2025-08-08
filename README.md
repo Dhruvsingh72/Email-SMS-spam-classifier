@@ -13,3 +13,9 @@ A machine learning project that classifies SMS messages as **Spam** or **Not Spa
 ---
 
 ## 📂 Project Structure
+.
+├── app.py # Main Streamlit application
+├── model.pkl # Trained ML model
+├── vectorizer.pkl # TF-IDF vectorizer
+├── requirements.txt # Required dependencies
+└── .gitignore # Ignored files/folders
