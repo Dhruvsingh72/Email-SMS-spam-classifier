@@ -42,16 +42,26 @@ model = pickle.load(open('model.pkl', 'rb'))
 # Page config
 st.set_page_config(page_title="📩 Email/SMS Spam Classifier",layout="centered")
 
-
 # Custom CSS for colorful theme
 st.markdown("""
     <style>
     .main {
-        background-color: white;
-        padding: 25px;
-        border-radius: 15px;
-        box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.15);
-    }
+            padding: 2rem;
+        }
+        .block-container {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+        .result-box {
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 22px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 25px;
+        }
     .stTextInput>div>div>input {
         font-size: 18px;
         padding: 12px;
@@ -71,14 +81,6 @@ st.markdown("""
     .stButton>button:hover {
         background: linear-gradient(45deg, #2575fc, #6a11cb);
         transform: scale(1.05);
-    }
-    .result-box {
-        padding: 15px;
-        border-radius: 10px;
-        font-size: 20px;
-        font-weight: bold;
-        text-align: center;
-        margin-top: 20px;
     }
     .spam {
         background-color: #ffcccc;
