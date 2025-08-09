@@ -40,7 +40,7 @@ model = pickle.load(open('model.pkl', 'rb'))
 
 # --- UI Customization ---
 # Page config
-st.set_page_config(page_title="📩 Email/SMS Spam Classifier",layout="centered")
+st.set_page_config(page_title="📩 Email/SMS Spam Classifier-DSC",layout="centered")
 
 # Custom CSS for colorful theme
 st.markdown("""
